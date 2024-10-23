@@ -1,7 +1,7 @@
 
 # Версии: 
 ##### все версии языка
-[Тык](https://github.com/YaroslavlPe1/archive/blob/main/README.md)
+[Тык](https://github.com/YaroslavlPe1/archive)
 
 ## Режимы
 Default — это обычная обработка кода и его выполнения.
