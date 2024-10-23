@@ -1,7 +1,7 @@
 
 # Версии: 
 ##### все версии языка
-<a href=" https://github.com/YaroslavlPe1/archive/tree/main" target="_blank">тык</a>
+<a href="[https://example.com](https://github.com/YaroslavlPe1/archive/blob/main/README.md)" target="_blank" rel="noopener"><span>Тыкt</span> </a>
 
 ## Режимы
 Default — это обычная обработка кода и его выполнения.
