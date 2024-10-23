@@ -1,5 +1,4 @@
-
-# Версии: 
+# Документация:
 #### Все версии языка:
 [Тык](https://github.com/YaroslavlPe1/archive)
 
