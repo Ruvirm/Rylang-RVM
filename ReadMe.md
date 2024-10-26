@@ -1,11 +1,11 @@
 ![иконка](/icon/icon128.png)
 
-## Документация: Язык RVM
+## Documentation: RVM Language
 
-#### Все версии языка:
-[Тык](https://github.com/YaroslavlPe1/archive)
+#### All language versions:
+[Click here](https://github.com/YaroslavlPe1/archive)
 
-## Список имён токенов:
+## List of Token Names:
 ```cpp
     NUMBER    -   0
     PLUS      -   1
@@ -17,13 +17,13 @@
     END       -   7
 ```
 
-#### Пример:
-##### Код:
+#### Example:
+##### Code:
 ```cpp
 1 + 2 * 3 - 4
 ```
 
-##### Вывод токенов (при включённом режиме Debug):
+##### Token output (with Debug mode enabled):
 ```cpp
 Token(Type: 0, Value: "1")
 Token(Type: 1, Value: "+")
@@ -35,39 +35,39 @@ Token(Type: 0, Value: "4")
 Token(Type: 7, Value: "")
 ```
 
-## Приоритет операций:
+## Operator Precedence:
 ```cpp
-1. ()  - Скобки
-2. ""  - Строки
-3. ''  - Символы
-4. * / - Умножение и деление
-5. + - - Сложение и вычитание
-6. ID  - Идентификаторы
+1. ()  - Parentheses
+2. ""  - Strings
+3. ''  - Characters
+4. * / - Multiplication and division
+5. + - - Addition and subtraction
+6. ID  - Identifiers
 ```
 
-## Типы данных:
-- `int` — Целое число.
-- `double` — Число с плавающей запятой двойной точности. Более точное, чем `float`.
-- `float` — Число с плавающей запятой.
-- `char` — Тип данных для хранения одного символа.
-- `string` — Тип данных для хранения строк символов.
-- `bool` — Логическое значение. Может принимать только два значения: `true` или `false`.
-- `long` — Длинное целое число.
-- `short` — Короткое целое число.
+## Data Types:
+- `int` — Integer.
+- `double` — Double-precision floating-point number, more accurate than `float`.
+- `float` — Floating-point number.
+- `char` — Data type for storing a single character.
+- `string` — Data type for storing a string of characters.
+- `bool` — Boolean value, can be either `true` or `false`.
+- `long` — Long integer.
+- `short` — Short integer.
 
-### Структуры:
+### Structures:
 ```cpp
-struct имя_структуры {
-    компоненты_структуры;
+struct structure_name {
+    structure_components;
 };
 ```
 
-Модификаторы доступа:
-- `public` — Доступ открыт для всех.
-- `protected` — Доступен только самому классу, его производным и друзьям.
-- `private` — Доступен только самому классу и его друзьям.
+Access Modifiers:
+- `public` — Accessible to everyone.
+- `protected` — Accessible only within the class, derived classes, and friends.
+- `private` — Accessible only within the class and its friends.
 
-## Пример программы a+b:
+## Example program a+b:
 ```cpp
 import match;
 import gl;
@@ -80,107 +80,107 @@ void main(int a, int b) {
 }
 ```
 
-## Ключевые слова и конструкции языка:
-- `cout` — Вывод текста, переменных, массивов и т.д. в консоль.
+## Keywords and Constructs:
+- `cout` — Outputs text, variables, arrays, etc., to the console.
   ```cpp
   cout " ";
   ```
 
-- `return` — Возвращает значение.
+- `return` — Returns a value.
 
-- `if` — Условная конструкция:
+- `if` — Conditional construct:
   ```cpp
   if (1 != 4) {
-      // код, если истина
+      // code if true
   } elif (2 == 2) {
-      // код для elif
+      // code for elif
   } else {
-      // код, если ложь
+      // code if false
   }
   ```
 
-- `switch`, `case`, `default` — Блок switch:
+- `switch`, `case`, `default` — Switch block:
   ```cpp
   switch (x) {
       case 1:
-          // код
+          // code
           break;
       default:
-          // код
+          // code
   }
   ```
 
-- `import` — Команда для импорта кода.
+- `import` — Command to import code.
 
-- `input` — Ввод данных пользователем.
+- `input` — User data input.
   ```cpp
-  переменная a = input("Введите текст:");
+  variable a = input("Enter text:");
   ```
 
-## Циклы:
-- **Цикл for**:
+## Loops:
+- **For Loop**:
   ```cpp
   for (int a = 0; a < 10; a++) {
-      // код цикла
+      // loop code
   }
   ```
 
-- **Цикл while**:
+- **While Loop**:
   ```cpp
   int n = 1;
   while (n < 6) {
-      cout 'Цикл выполнен', n;
+      cout 'Loop executed', n;
       n++;
   }
   ```
 
-- **Цикл do-while**:
+- **Do-While Loop**:
   ```cpp
   int n = 1;
   do {
-      cout "Привет";
+      cout "Hello";
       n++;
   } while (n <= 10);
   ```
 
-## ООП:
-- **Класс**:
+## OOP:
+- **Class**:
   ```cpp
-  class ИмяКласса {
-      ИмяКласса() {
-          // конструктор
+  class ClassName {
+      ClassName() {
+          // constructor
       }
   };
   ```
 
-## Препроцессор:
-- `#undef` — Отмена макроса, хотя обычно это не требуется из-за динамического контроллера препроцессора.
-- `#define` — Объявление макроса или замена слова/функции.
+## Preprocessor:
+- `#undef` — Cancels a macro, though typically unnecessary due to the dynamic control of the preprocessor.
+- `#define` — Declares a macro or replacement for a word/function.
   ```cpp
   #define print cout
   ```
 
-### Особенность препроцессора в RVM:
-Создайте файл с расширением `.gr` и определите замены:
+### Preprocessor Feature in RVM:
+Create a file with the `.gr` extension and define replacements:
 ```cpp
-class = класс,
-cout = вывести,
-int = целое число,
-float = число с плавающей точкой
+class = class,
+cout = output,
+int = integer,
+float = floating-point number
 ```
 
-В основном файле сборки:
+In the main build file:
 ```cpp
-preprocessor - имя_файла;
+preprocessor - file_name;
 ```
 
-## Идеальный код на языке RVM:
+## Ideal Code in RVM Language:
 ```cpp
 import os;
 
 int main() {
     for (int a = 0; a < 15; a++) {
-        cout "Привет";
+        cout "Hello";
     }
 }
 ```
