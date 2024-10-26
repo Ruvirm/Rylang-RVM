@@ -4,24 +4,6 @@
 #### Все версии языка:
 [Тык](https://github.com/YaroslavlPe1/archive)
 
-## Режимы
-
-- **Default** — Обычная обработка и выполнение кода.
-  Пример:
-  ```cpp
-  controller(myText, true, false);
-  ```
-  Если параметры не указаны, режим по умолчанию — **Default**:
-  ```cpp
-  controller(myText);
-  ```
-
-- **Debug** — Обработка с отладкой, вывод токенов и процессов.
-  Пример:
-  ```cpp
-  controller(myText, false, true);
-  ```
-
 ## Список имён токенов:
 ```cpp
     NUMBER    -   0
