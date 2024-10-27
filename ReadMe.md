@@ -3,7 +3,7 @@
 ## Documentation: RVM Language
 
 #### All language versions:
-[Click here](https://github.com/YaroslavlPe1/archive)
+[Click here](https://github.com/YaroslavPe1/Archive-RVM)
 
 ## List of Token Names:
 ```cpp
