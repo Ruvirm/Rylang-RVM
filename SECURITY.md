@@ -1,12 +1,12 @@
 # Security Policy
 
-## Supported Versions
+## Supported Versions Rvm
 
 Use project versions that have the LTS\tag installed.
 
 | Version | Supported          |
 | ------- | ------------------ |
-| 2   | LTS |
+| 0.2   | LTS |
 
 
 ## Reporting a Vulnerability
