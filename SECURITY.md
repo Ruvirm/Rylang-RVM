@@ -2,11 +2,11 @@
 
 ## Supported Versions Rvm
 
-Use project versions that have the LTS\tag installed.
+Use project versions that have the release\tag installed.
 
-| Version | Supported          |
+| Version RVM | Supported          |
 | ------- | ------------------ |
-| 0.2   | LTS |
+| 0.2   | release |
 
 
 ## Reporting a Vulnerability
